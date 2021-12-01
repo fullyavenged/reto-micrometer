@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: myvalue
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:8888
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+      base-path: /actuator
